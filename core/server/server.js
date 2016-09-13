@@ -62,8 +62,8 @@ app.listen(3000, function() {
   var host = server.address().address,
     port = server.address().port;
 
-  console.log('API listening at http://%s:%s', host, port);
-});*/
+  console.log('API listening at http://%s:%s', host, port);*/
+// });
 
 
 
