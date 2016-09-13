@@ -1,0 +1,21 @@
+
+<input type="radio" name="rep" ng-model="select.senator" value="senator"><label>senator</label>
+<input type="radio" name="rep" ng-model="select.representative" value="representative"><label>representative</label>
+<br>
+<label for="select_state">Choose State:</label>
+<br>
+<select name="state" id="select_state" ng-model="select.state"
+        data-ng-options="state for state in states"
+        ng-change="getSenByState(select)">
+    <!--ng-change="getRepsByState(stateSelect)">-->
+</select>
+
+
+<!--<button ng-click="getSenByState('UT')"> get representative</button>-->
+
+<div ng-repeat="senator in senators">
+    {{senator}}
+</div>
+
+<div ng-repeat="rep in representatives"></div>
+
